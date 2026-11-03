@@ -226,7 +226,7 @@
           </button>
         </div>
 
-        <!-- MEDALLAS Y CONDECORACIONES CON ICONOS DE AYUDA (TOOLTIPS) -->
+        <!-- MEDALLAS Y CONDECORACIONES -->
         <div class="military-card p-3 rounded-xl space-y-2">
           <div class="flex items-center justify-between border-b border-slate-800 pb-1.5">
             <h4 class="text-[11px] font-bold text-amber-400 flex items-center gap-1.5">
@@ -318,18 +318,19 @@
             </button>
           </div>
 
-          <!-- SUB-PESTAÑAS DE ACADEMIA CON PESTAÑA MANDO ADICIONADA -->
-          <div class="grid grid-cols-7 gap-1 bg-slate-950 p-1 rounded-lg border border-slate-800 text-[8px] font-bold text-center">
+          <!-- SUB-PESTAÑAS DE ACADEMIA -->
+          <div class="grid grid-cols-8 gap-1 bg-slate-950 p-1 rounded-lg border border-slate-800 text-[8px] font-bold text-center">
             <button id="regTab1Btn" onclick="switchRegTab(1); playSound('click');" class="py-1 rounded text-white bg-blue-600 shadow">📖 Cap 1-2</button>
             <button id="regTab2Btn" onclick="switchRegTab(2); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">📜 Cap 3-4</button>
             <button id="regTab3Btn" onclick="switchRegTab(3); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">⚖️ Cap 5-7</button>
             <button id="regTab4Btn" onclick="switchRegTab(4); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">⭐ Rangos</button>
             <button id="regTab5Btn" onclick="switchRegTab(5); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">📻 Q & RP</button>
             <button id="regTab6Btn" onclick="switchRegTab(6); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">🗺️ Mapa</button>
-            <button id="regTab7Btn" onclick="switchRegTab(7); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">🪖 Mando</button>
+            <button id="regTab7Btn" onclick="switchRegTab(7); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">🎯 Oper</button>
+            <button id="regTab8Btn" onclick="switchRegTab(8); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">🪖 Mando</button>
           </div>
 
-          <!-- BLOQUE 1: CAPÍTULOS 1 Y 2 -->
+          <!-- BLOQUE 1: CAPÍTULOS 1 Y 2 (Con todos los subpuntos exactos) -->
           <div id="regView1" class="space-y-2.5">
             <div class="bg-gradient-to-r from-amber-950/60 to-slate-900 p-3 rounded-xl border border-amber-800/60 flex items-start gap-2.5 shadow">
               <div class="w-8 h-8 rounded-lg bg-emerald-600/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 text-sm mt-0.5">
@@ -348,6 +349,8 @@
                   <i id="chevron_cap1" class="fa-solid fa-chevron-down text-slate-400 text-[10px] transition-transform"></i>
                 </button>
                 <div id="cap1" class="hidden mt-2.5 pt-2.5 border-t border-slate-900 text-[11px] text-slate-300 space-y-1.5">
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>Horario de trabajo:</strong> De 17:00 a 02:00 (/TIME). Durante este periodo, todos los empleados deben estar de servicio y uniformados.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>Nota importante:</strong> El General y los Coroneles de la organización tienen derecho a informar a la administración o aplicar medidas disciplinarias de forma independiente si detectan una infracción.</div>
                   <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>1.1.</strong> Todos los empleados del ejército deben conocer y cumplir este reglamento.</div>
                   <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>1.2.</strong> Por infracciones a los artículos del reglamento, los empleados pueden sufrir las siguientes medidas disciplinarias: advertencia, amonestación, despido o despido con inclusión en la lista negra de la organización.</div>
                   <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>1.3.</strong> Todo empleado tiene derecho a apelar una medida disciplinaria.</div>
@@ -363,35 +366,76 @@
                 <div id="cap2" class="hidden mt-2.5 pt-2.5 border-t border-slate-900 text-[11px] text-slate-300 space-y-1.5">
                   <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.1.</strong> Conocer y obedecer las leyes del estado, los estatutos de la organización y asegurar su cumplimiento.</div>
                   <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.2.</strong> Proteger la vida de los ciudadanos por cualquier medio necesario.</div>
-                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.3.</strong> Obedecer las órdenes y peticiones de los oficiales superiores sin cuestionarlas.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.3.</strong> Obedecer las órdenes y peticiones de los oficiales superiores sin cuestionarlas, debiendo estar dentro del marco legal.</div>
                   <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.4.</strong> Respetar la cadena de mando.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.5.</strong> Seguir el orden interno de la organización.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.6.</strong> Ser cortés y diplomático al comunicarse con los ciudadanos.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.7.</strong> En caso de daños intencionales o accidentales, el oficial debe reparar el vehículo de trabajo.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.8.</strong> Los soldados deben conocer a sus oficiales superiores por su rostro y nombre.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.9.</strong> Proteger los bienes y objetos de valor del ejército.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.10.</strong> Presentar los documentos al oficial de guardia en los puestos de control.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.11.</strong> En los puestos de control, verificar los documentos de todos los civiles que lleguen.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.12.</strong> Los soldados deben presentarse antes de verificar los documentos.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>2.13.</strong> Vigilar el territorio del ejército diariamente. La distribución de las áreas de servicio la realiza el ayudante o el líder.</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- BLOQUE 2: CAPÍTULOS 3 Y 4 -->
+          <!-- BLOQUE 2: CAPÍTULOS 3 Y 4 (Permisos y Prohibiciones completas) -->
           <div id="regView2" class="space-y-2 hidden">
             <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2.5">
               <button onclick="toggleChapter('cap3')" class="w-full flex justify-between items-center text-xs font-bold text-emerald-400">
-                <span><i class="fa-solid fa-person-military-rifle mr-1.5"></i> CAPÍTULO 3: El Personal Puede</span>
+                <span><i class="fa-solid fa-person-military-rifle mr-1.5"></i> CAPÍTULO 3: El Personal del Ejército Puede</span>
                 <i id="chevron_cap3" class="fa-solid fa-chevron-down text-slate-400 text-[10px] transition-transform"></i>
               </button>
               <div id="cap3" class="hidden pt-2 border-t border-slate-900 text-[11px] text-slate-300 space-y-1.5">
                 <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.1.</strong> Disparar a los civiles que ingresen ilegalmente al territorio del ejército.</div>
                 <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.2.</strong> Prestar asistencia a otras facciones gubernamentales durante eventos.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.3.</strong> Verificar los documentos de identidad de civiles y personal.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.4.</strong> Hacer preguntas a los oficiales superiores.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.5.</strong> Practicar tiro fuera del horario laboral.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.6.</strong> Solicitar asistencia por radio.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.7.</strong> Disparar a los civiles que apunten con un arma a otro civil o a un agente de policía.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.8.</strong> Tomar licencia o vacaciones con la aprobación del General o los Coroneles (hasta por dos semanas).</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.9.</strong> Bloquear caminos para prevenir delitos (por ejemplo, la entrega de guaraná por la mafia).</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.10.</strong> Chocar o disparar contra vehículos para prevenir delitos (por ejemplo, la entrega de guaraná por la mafia).</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.11.</strong> Transportar y almacenar armas en cualquier lugar.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>3.12.</strong> Estacionar vehículos personales en el territorio de la organización.</div>
               </div>
             </div>
 
             <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2.5">
               <button onclick="toggleChapter('cap4')" class="w-full flex justify-between items-center text-xs font-bold text-red-400">
-                <span><i class="fa-solid fa-ban mr-1.5"></i> CAPÍTULO 4: Prohibido para Empleados</span>
+                <span><i class="fa-solid fa-ban mr-1.5"></i> CAPÍTULO 4: Prohibido para Empleados del Ejército</span>
                 <i id="chevron_cap4" class="fa-solid fa-chevron-down text-slate-400 text-[10px] transition-transform"></i>
               </button>
               <div id="cap4" class="hidden pt-2 border-t border-slate-900 text-[11px] text-slate-300 space-y-1.5">
                 <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.1.</strong> Vender o perder uniformes militares.</div>
                 <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.2.</strong> Vender cualquier propiedad del gobierno.</div>
                 <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.3.</strong> Solicitar ascensos de rango o puesto.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.4.</strong> Abandonar la base sin permiso. <span class="text-amber-300 block text-[10px] mt-0.5">Nota: Abandonar la base sin reportarse se considera ausencia no autorizada.</span></div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.5.</strong> Permanecer solo en barrios marginales innecesariamente.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.6.</strong> Causar daño físico a compañeros, civiles, empleados o propiedad sin motivo.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.7.</strong> Engañar a soldados o civiles.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.8.</strong> Discutir, ignorar o cuestionar órdenes de oficiales superiores.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.9.</strong> Usar lenguaje obsceno, insultar o humillar a alguien.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.10.</strong> Colaborar con grupos criminales o mafias.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.11.</strong> Abusar de autoridad.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.12.</strong> Usar máscara innecesariamente. <span class="text-amber-300 block text-[10px] mt-0.5">Nota: El uso debe reportarse por radio, indicando el motivo.</span></div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.13.</strong> Acompañar a civiles o miembros de pandillas en la base.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.14.</strong> Manejar asuntos personales durante el trabajo.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.15.</strong> Poseer o consumir drogas o alcohol estando de servicio.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.16.</strong> Usar vehículos oficiales para fines personales.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.17.</strong> Se prohíbe cualquier comportamiento inapropiado.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.18.</strong> Realizar actividades ilícitas durante el trabajo.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.19.</strong> Hacer mal uso del megáfono.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.20.</strong> Trabajar en empleos secundarios durante el servicio o estando de uniforme.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.21.</strong> Aceptar sobornos.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.22.</strong> Uso de armas para fines personales.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.23.</strong> Ocupar o abandonar puestos sin reportarlo por radio.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.24.</strong> Cambiar o elegir puestos sin autorización.</div>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.25.</strong> Usar la radio y el chat del departamento para fines ajenos al trabajo.</div>
               </div>
             </div>
           </div>
@@ -406,6 +450,12 @@
                 </button>
                 <div id="cap5" class="hidden mt-2.5 pt-2.5 border-t border-slate-900 text-[11px] text-slate-300 space-y-1.5">
                   <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>5.1.</strong> El tiempo de entrenamiento es de 5 minutos exactos.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>5.2.</strong> Se prohíbe el uso de gestos durante el entrenamiento. <span class="text-amber-300 block text-[10px]">Excepción: levantar la mano.</span></div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>5.3.</strong> Se prohíbe quebrantar la disciplina durante el entrenamiento.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>5.4.</strong> Se prohíbe el uso de la radio durante el entrenamiento.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>5.5.</strong> Se prohíbe hablar durante el entrenamiento (en voz baja o susurrando).</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>5.6.</strong> Se prohíbe el uso del teléfono durante el entrenamiento.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>5.7.</strong> Se prohíbe portar o usar armas durante el entrenamiento.</div>
                 </div>
               </div>
 
@@ -415,7 +465,19 @@
                   <i id="chevron_cap6" class="fa-solid fa-chevron-down text-slate-400 text-[10px] transition-transform"></i>
                 </button>
                 <div id="cap6" class="hidden mt-2.5 pt-2.5 border-t border-slate-900 text-[11px] text-slate-300 space-y-1.5">
-                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>6.1.</strong> Comunicarse cortésmente con todos los ciudadanos.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>6.1.</strong> El personal del ejército debe comunicarse cortésmente con todos los ciudadanos, independientemente de su estatus.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>6.2.</strong> Se prohíben los asuntos personales, los insultos y las discusiones por radio o en el chat del departamento.</div>
+                </div>
+              </div>
+
+              <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                <button onclick="toggleChapter('cap7')" class="w-full flex justify-between items-center text-xs font-bold text-emerald-400">
+                  <span><i class="fa-solid fa-calendar-days mr-1.5"></i> CAPÍTULO 7: Horario y Requisitos de Servicio</span>
+                  <i id="chevron_cap7" class="fa-solid fa-chevron-down text-slate-400 text-[10px] transition-transform"></i>
+                </button>
+                <div id="cap7" class="hidden mt-2.5 pt-2.5 border-t border-slate-900 text-[11px] text-slate-300 space-y-1.5">
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>7.1.</strong> Horas mínimas semanales de juego para el personal del ejército: <strong>7 horas</strong>.</div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>7.2.</strong> Ausencia máxima del juego: <strong>3 días</strong>.</div>
                 </div>
               </div>
             </div>
@@ -429,35 +491,99 @@
                 <span class="text-[9px] text-emerald-400 font-bold">Jerarquía Oficial</span>
               </div>
               <div class="space-y-2 pt-1 text-[11px]">
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">⭐ RANGO 1 / PRIVADO</div>
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">⭐⭐ RANGO 2 / SARGENTO</div>
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">⭐⭐⭐ RANGO 3 / TENIENTES</div>
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">⭐⭐⭐⭐ RANGO 4 / MAYOR</div>
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">⭐⭐⭐⭐⭐ RANGO 5 / CORONEL</div>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+                  <strong class="text-white block mb-1">⭐ RANGO 1 / PRIVADO</strong>
+                  <p class="text-[10px] text-slate-300">Otorgado a nuevos reclutas. Función: Obedecer órdenes, cuidar base militar como guardia, vigilar accesos. Se le otorga chaleco antibalas y pistolas DEASER.</p>
+                </div>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+                  <strong class="text-white block mb-1">⭐⭐ RANGO 2 / SARGENTO</strong>
+                  <p class="text-[10px] text-slate-300">Función: Encargados de la enseñanza, educación, manejo y control de los privados (profesores). Participan en acciones y apoyan a soldados intermedios.</p>
+                </div>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+                  <strong class="text-white block mb-1">⭐⭐⭐ RANGO 3 / TENIENTES</strong>
+                  <p class="text-[10px] text-slate-300">Función: Conocen las normas y manejo de base. Verifican la enseñanza de los sargentos a los privados y el control de la base. Tienen permitido usar vehículos militares para movilización.</p>
+                </div>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+                  <strong class="text-white block mb-1">⭐⭐⭐⭐ RANGO 4 / MAYOR</strong>
+                  <p class="text-[10px] text-slate-300">Función: Soldados de élite, los más destacados. Lideran rangos anteriores, organizan, enseñan y verifican el orden. Se les permite utilizar toda arma de fuego.</p>
+                </div>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+                  <strong class="text-white block mb-1">⭐⭐⭐⭐⭐ RANGO 5 / CORONEL</strong>
+                  <p class="text-[10px] text-slate-300">Función: Jefes y vice-líderes de las fuerzas armadas. Dan las ordenes, mandan cuando el General no está. Sus órdenes no se cuestionan, se cumplen.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- BLOQUE 5: CÓDIGOS Q Y BIBLIA RP -->
+          <!-- BLOQUE 5: CÓDIGOS Q Y BIBLIA RP COMPLETA -->
           <div id="regView5" class="space-y-3 hidden">
             <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2">
               <h4 class="text-xs font-bold text-amber-400"><i class="fa-solid fa-tower-broadcast mr-1"></i> Códigos Q</h4>
               <div id="qCodesContainer" class="grid grid-cols-1 gap-1.5 max-h-40 overflow-y-auto pr-1 text-[11px]"></div>
             </div>
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2">
+              <h4 class="text-xs font-bold text-blue-400"><i class="fa-solid fa-book mr-1"></i> Biblia RP (Rio Rise)</h4>
+              <div id="rpContainer" class="grid grid-cols-1 gap-1.5 max-h-48 overflow-y-auto pr-1 text-[11px]"></div>
+            </div>
           </div>
 
-          <!-- BLOQUE 6: MAPA TÁCTICO -->
+          <!-- BLOQUE 6: MAPA TÁCTICO DE BASE -->
           <div id="regView6" class="space-y-3 hidden">
             <div class="bg-slate-950 p-3 rounded-xl border border-amber-500/50 space-y-2">
-              <h4 class="text-xs font-bold text-amber-400"><i class="fa-solid fa-map-location-dot mr-1"></i> Mapa Táctico</h4>
+              <h4 class="text-xs font-bold text-amber-400"><i class="fa-solid fa-map-location-dot mr-1"></i> Mapa Táctico de Base (Rio Rise)</h4>
+              <p class="text-[10px] text-slate-300">Zonas clave: Torres Tango (1 al 8), Cuartel General, Garajes (1 al 3), Helipuerto, Taller, Comedor y Planta Eléctrica.</p>
               <div class="rounded-lg overflow-hidden border border-slate-700 bg-slate-900 cursor-pointer group relative text-center" onclick="openImageModal('https://lh3.googleusercontent.com/d/1F5ttqI3gCHspV3tGZUP6FtizZN6UvHR9')">
                 <img src="https://lh3.googleusercontent.com/d/1F5ttqI3gCHspV3tGZUP6FtizZN6UvHR9" alt="Mapa Base Rio Rise" class="w-full h-auto object-cover max-h-56">
+                <div class="absolute bottom-1 right-1 bg-black/70 text-[9px] px-2 py-0.5 rounded text-white">Haz clic para ampliar</div>
               </div>
             </div>
           </div>
 
-          <!-- BLOQUE 7: NUEVA PESTAÑA CADENA DE MANDO (ESTRUCTURA DE ESCUADRONES PRO) -->
+          <!-- BLOQUE 7: ACCIONES Y OPERACIONES (CRM, Patrullaje, Pacificaciones, Invasiones) -->
           <div id="regView7" class="space-y-3 hidden">
+            <div class="space-y-2.5 text-[11px]">
+              
+              <div class="bg-slate-950 p-3 rounded-xl border border-blue-500/40 space-y-1.5">
+                <h5 class="font-bold text-blue-400 text-xs"><i class="fa-solid fa-truck-fast mr-1"></i> CRM (Cargamento)</h5>
+                <p class="text-slate-300"><strong>Horarios:</strong> 1er Cargamento 17:00 /TIME | 2do Cargamento 19:00 /TIME (Todos los días, 2 veces al día).</p>
+                <p class="text-slate-300"><strong>En qué consiste:</strong> El EB utiliza un camión para transportar material desde un puerto hasta la base militar para fabricar armas. La Policía Federal (PF) interviene ayudando al EB. Las mafias intentarán robar el camión en el trayecto para llevarlo a su mansión.</p>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800 text-[10px] space-y-1 mt-1">
+                  <p class="text-amber-300 font-bold">Configuración Semanal CRM:</p>
+                  <p>• <strong>Lunes:</strong> Facción Verde</p>
+                  <p>• <strong>Martes:</strong> Mafia de la Colina</p>
+                  <p>• <strong>Miércoles:</strong> Facción Morada</p>
+                  <p>• <strong>Jueves:</strong> Mafia Costera</p>
+                  <p>• <strong>Viernes:</strong> 17:00 Mafia Costera | 19:00 Mafia de la Colina</p>
+                  <p>• <strong>Sábado:</strong> 17:00 Verdes | 19:00 Moradas</p>
+                  <p>• <strong>Domingo:</strong> Acción libre (La primera mafia o facción que llegue al punto de carga se queda con la acción).</p>
+                </div>
+              </div>
+
+              <div class="bg-slate-950 p-3 rounded-xl border border-emerald-500/40 space-y-1.5">
+                <h5 class="font-bold text-emerald-400 text-xs"><i class="fa-solid fa-car-side mr-1"></i> Patrullaje</h5>
+                <p class="text-slate-300">Actividad donde el EB sale a patrullar la ciudad con 3 o más vehículos militares, controlando el orden y realizando procedimientos de detención. Obligatoriamente debe estar supervisada por un General o un Coronel.</p>
+              </div>
+
+              <div class="bg-slate-950 p-3 rounded-xl border border-purple-500/40 space-y-1.5">
+                <h5 class="font-bold text-purple-400 text-xs"><i class="fa-solid fa-shield-halved mr-1"></i> Pacificaciones e Invasiones</h5>
+                <p class="text-slate-300"><strong>¿Qué es?</strong> Momento donde una organización invade el territorio de otra para eliminar a todos los participantes y ganar la acción.</p>
+                <p class="text-slate-300"><strong>Mafia hacia EB:</strong> Invaden la base militar para eliminar a toda la base y ganar.</p>
+                <p class="text-slate-300"><strong>EB hacia Mafia:</strong> El EB invade las favelas o territorios de las mafias en la ciudad.</p>
+                <div class="bg-slate-900 p-2 rounded border border-slate-800 text-[10px] space-y-1 mt-1">
+                  <p class="text-amber-300 font-bold">Horarios Oficiales:</p>
+                  <p>• <strong>Martes (Invasión EB):</strong> Facciones Morada y Verde de 17:00 a 24:00.</p>
+                  <p>• <strong>Jueves (Invasión EB):</strong> Mafia Blanca y Mafia Azul pueden programar acción entre 19:00 y 23:00 (Intervalo mínimo de 2 horas entre acciones).</p>
+                  <p>• <strong>Sábado (Pacificaciones):</strong> 21:00 a 22:00 (Ejército contra mafias).</p>
+                  <p>• <strong>Domingo y Lunes (Pacificaciones Conjuntas):</strong> 21:00 a 00:00 (Ejército + Policía Federal contra facciones).</p>
+                  <p class="text-red-400 mt-1">• <strong>Regla adicional maletín:</strong> Si una familia roba un maletín en el EB y conquista la mafia en ausencia de la otra, su mafia será reiniciada y recibirá advertencia, recuperando la anterior su mafia.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- BLOQUE 8: CADENA DE MANDO (ESCUADRONES) -->
+          <div id="regView8" class="space-y-3 hidden">
             <div class="bg-slate-950 p-3 rounded-xl border border-blue-500/50 space-y-3">
               <div class="flex items-center justify-between border-b border-slate-800 pb-2">
                 <div class="flex items-center gap-2">
@@ -467,7 +593,7 @@
                 <span class="text-[9px] bg-blue-900/60 text-blue-300 border border-blue-700 px-2 py-0.5 rounded font-bold">30 Operativos</span>
               </div>
 
-              <!-- ESCUADRÓN ALFA (9) -->
+              <!-- ESCUADRÓN ALFA -->
               <div class="bg-slate-900/90 rounded-xl border border-cyan-500/40 overflow-hidden shadow-lg">
                 <div class="bg-gradient-to-r from-cyan-950 to-slate-900 p-2.5 flex items-center justify-between border-b border-cyan-500/30">
                   <div class="flex items-center gap-2">
@@ -477,52 +603,28 @@
                   <span class="text-[10px] bg-cyan-950 text-cyan-300 font-mono font-bold px-2 py-0.5 rounded border border-cyan-800">9 Miembros</span>
                 </div>
                 <div class="p-2.5 space-y-2 text-[11px]">
-                  
-                  <!-- Tenientes -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-amber-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Tenientes [3]</span>
-                      <span class="text-slate-400 font-mono">2</span>
+                      <span>Tenientes [2]</span>
                     </div>
                     <div class="grid grid-cols-2 gap-1.5 pl-2">
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between">
-                        <span class="text-slate-200 font-medium">Alex_Romero</span>
-                        <span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span>
-                      </div>
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between">
-                        <span class="text-slate-200 font-medium truncate">Davimiguel_Costa</span>
-                        <span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span>
-                      </div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between"><span class="text-slate-200">Alex_Romero</span><span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span></div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between"><span class="text-slate-200 truncate">Davimiguel_Costa</span><span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span></div>
                     </div>
                   </div>
-
-                  <!-- Sargentos -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-blue-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Sargentos [2]</span>
-                      <span class="text-slate-400 font-mono">3</span>
+                      <span>Sargentos [3]</span>
                     </div>
                     <div class="grid grid-cols-3 gap-1 pl-2">
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-center truncate">
-                        <span class="text-slate-200 block truncate">Arilu_Domi</span>
-                        <span class="text-[7px] badge-sargento px-1 rounded font-bold">S-2</span>
-                      </div>
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-center truncate">
-                        <span class="text-slate-200 block truncate">Brayandaniel</span>
-                        <span class="text-[7px] badge-sargento px-1 rounded font-bold">S-2</span>
-                      </div>
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-center truncate">
-                        <span class="text-slate-200 block truncate">Lang_Kung</span>
-                        <span class="text-[7px] badge-sargento px-1 rounded font-bold">S-2</span>
-                      </div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-center truncate"><span class="text-slate-200 block truncate">Arilu_Domi</span><span class="text-[7px] badge-sargento px-1 rounded font-bold">S-2</span></div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-center truncate"><span class="text-slate-200 block truncate">Brayandaniel</span><span class="text-[7px] badge-sargento px-1 rounded font-bold">S-2</span></div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-center truncate"><span class="text-slate-200 block truncate">Lang_Kung</span><span class="text-[7px] badge-sargento px-1 rounded font-bold">S-2</span></div>
                     </div>
                   </div>
-
-                  <!-- Privados -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-slate-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Privados [1]</span>
-                      <span class="text-slate-400 font-mono">4</span>
+                      <span>Privados [4]</span>
                     </div>
                     <div class="grid grid-cols-2 gap-1.5 pl-2">
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-300 truncate">Alanraul_Barbosaferrei</div>
@@ -531,11 +633,10 @@
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-300 truncate">Enzoiago_Machadoevange</div>
                     </div>
                   </div>
-
                 </div>
               </div>
 
-              <!-- ESCUADRÓN BRAVO (11) -->
+              <!-- ESCUADRÓN BRAVO -->
               <div class="bg-slate-900/90 rounded-xl border border-emerald-500/40 overflow-hidden shadow-lg">
                 <div class="bg-gradient-to-r from-emerald-950 to-slate-900 p-2.5 flex items-center justify-between border-b border-emerald-500/30">
                   <div class="flex items-center gap-2">
@@ -545,30 +646,18 @@
                   <span class="text-[10px] bg-emerald-950 text-emerald-300 font-mono font-bold px-2 py-0.5 rounded border border-emerald-800">11 Miembros</span>
                 </div>
                 <div class="p-2.5 space-y-2 text-[11px]">
-                  
-                  <!-- Tenientes -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-amber-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Tenientes [3]</span>
-                      <span class="text-slate-400 font-mono">2</span>
+                      <span>Tenientes [2]</span>
                     </div>
                     <div class="grid grid-cols-2 gap-1.5 pl-2">
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between">
-                        <span class="text-slate-200 font-medium">Lili_Evange</span>
-                        <span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span>
-                      </div>
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between">
-                        <span class="text-slate-200 font-medium truncate">Sandrofelipe</span>
-                        <span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span>
-                      </div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between"><span class="text-slate-200">Lili_Evange</span><span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span></div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between"><span class="text-slate-200 truncate">Sandrofelipe</span><span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span></div>
                     </div>
                   </div>
-
-                  <!-- Sargentos -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-blue-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Sargentos [2]</span>
-                      <span class="text-slate-400 font-mono">4</span>
+                      <span>Sargentos [4]</span>
                     </div>
                     <div class="grid grid-cols-2 gap-1.5 pl-2">
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-200 truncate">Andres_Galvan</div>
@@ -577,12 +666,9 @@
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-200 truncate">Reina_Nicaragua</div>
                     </div>
                   </div>
-
-                  <!-- Privados -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-slate-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Privados [1]</span>
-                      <span class="text-slate-400 font-mono">5</span>
+                      <span>Privados [5]</span>
                     </div>
                     <div class="grid grid-cols-2 gap-1.5 pl-2">
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-300 truncate">Alacran_Gna</div>
@@ -592,11 +678,10 @@
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-300 truncate">Lara_Almonte</div>
                     </div>
                   </div>
-
                 </div>
               </div>
 
-              <!-- ESCUADRÓN CHARLIE (10) -->
+              <!-- ESCUADRÓN CHARLIE -->
               <div class="bg-slate-900/90 rounded-xl border border-purple-500/40 overflow-hidden shadow-lg">
                 <div class="bg-gradient-to-r from-purple-950 to-slate-900 p-2.5 flex items-center justify-between border-b border-purple-500/30">
                   <div class="flex items-center gap-2">
@@ -606,30 +691,18 @@
                   <span class="text-[10px] bg-purple-950 text-purple-300 font-mono font-bold px-2 py-0.5 rounded border border-purple-800">10 Miembros</span>
                 </div>
                 <div class="p-2.5 space-y-2 text-[11px]">
-                  
-                  <!-- Tenientes -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-amber-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Tenientes [3]</span>
-                      <span class="text-slate-400 font-mono">2</span>
+                      <span>Tenientes [2]</span>
                     </div>
                     <div class="grid grid-cols-2 gap-1.5 pl-2">
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between">
-                        <span class="text-slate-200 font-medium">Chute_Pacheco</span>
-                        <span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span>
-                      </div>
-                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between">
-                        <span class="text-slate-200 font-medium">Davii_Paez</span>
-                        <span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span>
-                      </div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between"><span class="text-slate-200">Chute_Pacheco</span><span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span></div>
+                      <div class="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between"><span class="text-slate-200">Davii_Paez</span><span class="text-[8px] badge-teniente px-1 rounded font-bold">T-3</span></div>
                     </div>
                   </div>
-
-                  <!-- Sargentos -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-blue-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Sargentos [2]</span>
-                      <span class="text-slate-400 font-mono">4</span>
+                      <span>Sargentos [4]</span>
                     </div>
                     <div class="grid grid-cols-2 gap-1.5 pl-2">
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-200 truncate">Angee_Ackerman</div>
@@ -638,12 +711,9 @@
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-200 truncate">Matias_Maldonado</div>
                     </div>
                   </div>
-
-                  <!-- Privados -->
                   <div class="space-y-1">
                     <div class="text-[9px] font-bold text-slate-400 uppercase flex items-center justify-between bg-slate-950/80 px-2 py-1 rounded border border-slate-800">
-                      <span><i class="fa-solid fa-chevron-right text-[7px] mr-1"></i>Privados [1]</span>
-                      <span class="text-slate-400 font-mono">4</span>
+                      <span>Privados [4]</span>
                     </div>
                     <div class="grid grid-cols-2 gap-1.5 pl-2">
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-300 truncate">Daviguilherme</div>
@@ -652,7 +722,6 @@
                       <div class="bg-slate-950 p-1.5 rounded border border-slate-800 text-slate-300 truncate">Yisus_Jaga</div>
                     </div>
                   </div>
-
                 </div>
               </div>
 
@@ -763,8 +832,6 @@
           
           <div id="creatorFormationSection" class="bg-purple-950/40 border border-purple-500/50 p-3 rounded-xl space-y-2.5">
             <h5 class="text-xs font-bold text-purple-300 flex items-center gap-1.5"><i class="fa-solid fa-circle-plus"></i> Abrir Formación Multipregunta</h5>
-            <p class="text-[10px] text-slate-300">Crea un cuestionario agregando varias preguntas paso a paso para la tropa:</p>
-            
             <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800 space-y-2">
               <input type="text" id="newFormQuestion" placeholder="Pregunta (Ej: ¿Cuál es el código Q de refuerzo?)" class="w-full bg-slate-900 border border-slate-700 text-white text-xs rounded p-1.5 focus:outline-none">
               <input type="text" id="newFormOptions" placeholder="Opciones (Separadas por coma: QRR, QAP, QTH)" class="w-full bg-slate-900 border border-slate-700 text-white text-xs rounded p-1.5 focus:outline-none">
@@ -1150,34 +1217,35 @@
     ];
 
     const rpRulesData = [
-      { code: "MDM", meaning: "Matar a más de 3 personas" },
-      { code: "RDM", meaning: "Entrar en una acción sin estar involucrado" },
-      { code: "VDM", meaning: "Atropellar a otros jugadores" },
-      { code: "MG", meaning: "Usar información de fuera del juego (MetaGaming)" },
-      { code: "CL", meaning: "Salir del juego para beneficio (Combat Log)" },
-      { code: "DM", meaning: "Dañar a otro sin motivo" },
-      { code: "RK", meaning: "Muerte vengativa (Revenge Kill)" },
-      { code: "SK", meaning: "Matar en territorio de facción (Spawn/Faction Kill)" },
-      { code: "TK", meaning: "Matar o causar daño a un compañero (Team Kill)" },
-      { code: "COP-BAIT", meaning: "Provocar acción policial" },
-      { code: "SAAV", meaning: "Sin amor a la vida" },
-      { code: "PG", meaning: "Acciones imposibles en la vida real (PowerGaming)" },
-      { code: "BUNNY-HOP / BH", meaning: "Correr y saltar de forma no realista" },
-      { code: "IFP", meaning: "Información fuera del personaje" },
-      { code: "ZZ", meaning: "Correr en zig zag para evitar disparos" },
-      { code: "KOS", meaning: "Matar al visualizar" },
-      { code: "PK", meaning: "Muerte del jugador" },
-      { code: "RPFW", meaning: "Crear un rol donde solo tú ganas" },
-      { code: "MIX", meaning: "Mezclar temas fuera del RP" },
-      { code: "APP", meaning: "Interrumpir acción a propósito" },
-      { code: "DMA", meaning: "Causar daños a vehículos" },
-      { code: "NRA", meaning: "Usar armas en lugares públicos" },
+      { code: "AAP", meaning: "Molestar acción a propósito" },
       { code: "AI", meaning: "Acción irregular" },
-      { code: "INA", meaning: "Invasión no autorizada" },
-      { code: "FAIL", meaning: "Acción fallida (Fail RP)" },
-      { code: "TSC", meaning: "Transferir items al administrador" },
+      { code: "BH / BUNNY-HOP", meaning: "Correr y saltar" },
       { code: "CC", meaning: "Cortar camino" },
-      { code: "FLAMING RP", meaning: "Ofensa contra jugadores" }
+      { code: "CL", meaning: "Salirse del juego para su beneficio (Combat Log)" },
+      { code: "COP-BAIT", meaning: "Provocar acción militar / policial" },
+      { code: "DARK", meaning: "Acoso, Racismo, Machismo, Homofobia, Xenofobia" },
+      { code: "DM", meaning: "Daño sin motivo" },
+      { code: "DMA", meaning: "Daño a vehículos" },
+      { code: "ECI", meaning: "Enseñar comandos incorrectos a otros jugadores" },
+      { code: "FAIL", meaning: "Acción fallida" },
+      { code: "FLAMING RP", meaning: "Ofensa contra jugadores" },
+      { code: "IFP", meaning: "Información fuera del personaje" },
+      { code: "INA", meaning: "Invasión no autorizada" },
+      { code: "KOS", meaning: "Matar a la vista (al visualizar alguien de otra organización/familia)" },
+      { code: "MDM", meaning: "Matar a más de 3 personas" },
+      { code: "MG", meaning: "Usar información externa para beneficio propio (MetaGaming)" },
+      { code: "MIX", meaning: "Mezclar temas fuera del RP" },
+      { code: "NRA", meaning: "Usar armas en lugares públicos" },
+      { code: "OOC", meaning: "Realizar acciones que no coinciden con el personaje" },
+      { code: "PG", meaning: "Acciones imposibles en la vida real (PowerGaming)" },
+      { code: "RDM", meaning: "Entrar en una acción sin estar involucrado" },
+      { code: "RK", meaning: "Muerte vengativa (Revenge Kill)" },
+      { code: "RPFW", meaning: "Crear un rol donde solo tú ganas" },
+      { code: "SAAV", meaning: "Sin amor a la vida" },
+      { code: "SK", meaning: "Matar en territorio de facción" },
+      { code: "TK", meaning: "Matar o causar daño a un compañero" },
+      { code: "TSC", meaning: "Transferencia de items a la administración" },
+      { code: "VDM", meaning: "Atropellar con el carro" }
     ];
 
     const masterQuizBank = [
@@ -1232,16 +1300,10 @@
     }
 
     function switchRegTab(tabNum) {
-      document.getElementById('regView1').classList.toggle('hidden', tabNum !== 1);
-      document.getElementById('regView2').classList.toggle('hidden', tabNum !== 2);
-      document.getElementById('regView3').classList.toggle('hidden', tabNum !== 3);
-      document.getElementById('regView4').classList.toggle('hidden', tabNum !== 4);
-      document.getElementById('regView5').classList.toggle('hidden', tabNum !== 5);
-      document.getElementById('regView6').classList.toggle('hidden', tabNum !== 6);
-      document.getElementById('regView7').classList.toggle('hidden', tabNum !== 7);
-
-      for (let i = 1; i <= 7; i++) {
+      for (let i = 1; i <= 8; i++) {
+        const view = document.getElementById(`regView${i}`);
         const btn = document.getElementById(`regTab${i}Btn`);
+        if (view) view.classList.toggle('hidden', tabNum !== i);
         if (btn) btn.className = tabNum === i ? 'py-1 rounded text-white bg-blue-600 shadow' : 'py-1 rounded text-slate-400 hover:text-white';
       }
     }
@@ -1249,18 +1311,9 @@
     function renderQCodes(list) {
       const container = document.getElementById('qCodesContainer');
       if (!container) return;
-      if (list.length === 0) {
-        container.innerHTML = '<p class="text-slate-500 italic text-center py-2">No se encontraron códigos.</p>';
-        return;
-      }
       let html = '';
       list.forEach(item => {
-        html += `
-          <div class="bg-slate-900 p-2 rounded border border-slate-800 flex items-center justify-between">
-            <span class="font-mono font-bold text-amber-400">${item.code}</span>
-            <span class="text-slate-200 text-right">${item.meaning}</span>
-          </div>
-        `;
+        html += `<div class="bg-slate-900 p-2 rounded border border-slate-800 flex items-center justify-between"><span class="font-mono font-bold text-amber-400">${item.code}</span><span class="text-slate-200 text-right">${item.meaning}</span></div>`;
       });
       container.innerHTML = html;
     }
@@ -1268,18 +1321,9 @@
     function renderRpRules(list) {
       const container = document.getElementById('rpContainer');
       if (!container) return;
-      if (list.length === 0) {
-        container.innerHTML = '<p class="text-slate-500 italic text-center py-2">No se encontraron conceptos.</p>';
-        return;
-      }
       let html = '';
       list.forEach(item => {
-        html += `
-          <div class="bg-slate-900 p-2 rounded border border-slate-800 flex items-center justify-between">
-            <span class="font-mono font-bold text-blue-400">${item.code}</span>
-            <span class="text-slate-200 text-right">${item.meaning}</span>
-          </div>
-        `;
+        html += `<div class="bg-slate-900 p-2 rounded border border-slate-800 flex items-center justify-between"><span class="font-mono font-bold text-blue-400">${item.code}</span><span class="text-slate-200 text-right">${item.meaning}</span></div>`;
       });
       container.innerHTML = html;
     }
@@ -1553,10 +1597,7 @@
       }
       let html = '';
       questionsBuilderArray.forEach((q, idx) => {
-        html += `<div class="bg-slate-900 p-1.5 rounded border border-slate-800 flex justify-between items-center">
-          <span class="text-white truncate"><strong>P${idx+1}:</strong> ${q.question}</span>
-          <button onclick="removeQuestionFromBuilder(${idx})" class="text-red-400 hover:text-red-300 px-1"><i class="fa-solid fa-trash"></i></button>
-        </div>`;
+        html += `<div class="bg-slate-900 p-1.5 rounded border border-slate-800 flex justify-between items-center"><span class="text-white truncate"><strong>P${idx+1}:</strong> ${q.question}</span><button onclick="removeQuestionFromBuilder(${idx})" class="text-red-400 hover:text-red-300 px-1"><i class="fa-solid fa-trash"></i></button></div>`;
       });
       container.innerHTML = html;
     }
@@ -1791,17 +1832,7 @@
         let fDateStr = !isNaN(formationDateObj.getTime()) ? formationDateObj.toLocaleDateString("en-GB", { timeZone: "America/Bogota" }) : "Fecha N/D";
         let fTimeStr = !isNaN(formationDateObj.getTime()) ? formationDateObj.toLocaleTimeString("en-GB", { timeZone: "America/Bogota", hour: '2-digit', minute: '2-digit' }) : "Hora N/D";
 
-        html += `
-          <div class="bg-slate-950 p-2.5 rounded border border-slate-800 text-[10px] space-y-1">
-            <div class="flex justify-between items-center font-bold text-purple-300">
-              <span>Org: ${f.organizer}</span>
-              ${badgeStatus}
-            </div>
-            <div class="text-slate-300 flex justify-between">
-              <span>Soldados evaluados: <span class="text-cyan-400 font-bold">${participantsCount}</span></span>
-              <span class="text-amber-400">📅 ${fDateStr} • ⏰ ${fTimeStr}</span>
-            </div>
-        `;
+        html += `<div class="bg-slate-950 p-2.5 rounded border border-slate-800 text-[10px] space-y-1"><div class="flex justify-between items-center font-bold text-purple-300"><span>Org: ${f.organizer}</span>${badgeStatus}</div><div class="text-slate-300 flex justify-between"><span>Soldados: <span class="text-cyan-400 font-bold">${participantsCount}</span></span><span class="text-amber-400">📅 ${fDateStr} • ⏰ ${fTimeStr}</span></div>`;
 
         if(participantsCount > 0) {
           html += `<div class="pt-1 border-t border-slate-900 space-y-0.5 text-[9px]">`;
@@ -1928,27 +1959,15 @@
       let html = '';
       
       if(weeklyHours >= 20) {
-        html += `<span class="bg-amber-500/20 border border-amber-500 text-amber-300 text-[9px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
-          <i class="fa-solid fa-medal text-amber-400"></i> Veterano de Guerra 
-          <button onclick="openMedalInfo('Veterano de Guerra', 'Se otorga automáticamente al acumular 20 horas o más de servicio durante la semana actual.')" class="text-amber-400 hover:text-white ml-0.5"><i class="fa-solid fa-circle-question"></i></button>
-        </span>`;
+        html += `<span class="bg-amber-500/20 border border-amber-500 text-amber-300 text-[9px] font-bold px-2 py-0.5 rounded flex items-center gap-1"><i class="fa-solid fa-medal text-amber-400"></i> Veterano de Guerra <button onclick="openMedalInfo('Veterano de Guerra', 'Se otorga automáticamente al acumular 20 horas o más de servicio durante la semana actual.')" class="text-amber-400 hover:text-white ml-0.5"><i class="fa-solid fa-circle-question"></i></button></span>`;
       }
       if(localStorage.getItem(`examPassed_${currentUser.username}`)) {
-        html += `<span class="bg-blue-500/20 border border-blue-500 text-blue-300 text-[9px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
-          <i class="fa-solid fa-brain text-blue-400"></i> Estratega Táctico 
-          <button onclick="openMedalInfo('Estratega Táctico', 'Otorgado al aprobar con éxito el examen obligatorio de Privados y dominar el reglamento.')" class="text-blue-400 hover:text-white ml-0.5"><i class="fa-solid fa-circle-question"></i></button>
-        </span>`;
+        html += `<span class="bg-blue-500/20 border border-blue-500 text-blue-300 text-[9px] font-bold px-2 py-0.5 rounded flex items-center gap-1"><i class="fa-solid fa-brain text-blue-400"></i> Estratega Táctico <button onclick="openMedalInfo('Estratega Táctico', 'Otorgado al aprobar con éxito el examen obligatorio de Privados y dominar el reglamento.')" class="text-blue-400 hover:text-white ml-0.5"><i class="fa-solid fa-circle-question"></i></button></span>`;
       }
       if(weeklyHours >= 5) {
-        html += `<span class="bg-emerald-500/20 border border-emerald-500 text-emerald-300 text-[9px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
-          <i class="fa-solid fa-shield text-emerald-400"></i> Operativo Activo 
-          <button onclick="openMedalInfo('Operativo Activo', 'Otorgado al alcanzar el mínimo de 5 horas de servicio en la semana.')" class="text-emerald-400 hover:text-white ml-0.5"><i class="fa-solid fa-circle-question"></i></button>
-        </span>`;
+        html += `<span class="bg-emerald-500/20 border border-emerald-500 text-emerald-300 text-[9px] font-bold px-2 py-0.5 rounded flex items-center gap-1"><i class="fa-solid fa-shield text-emerald-400"></i> Operativo Activo <button onclick="openMedalInfo('Operativo Activo', 'Otorgado al alcanzar el mínimo de 5 horas de servicio en la semana.')" class="text-emerald-400 hover:text-white ml-0.5"><i class="fa-solid fa-circle-question"></i></button></span>`;
       }
-      html += `<span class="bg-purple-500/20 border border-purple-500 text-purple-300 text-[9px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
-        <i class="fa-solid fa-star text-purple-400"></i> Leal al Mando 
-        <button onclick="openMedalInfo('Leal al Mando', 'Condecoración otorgada por el Alto Mando a los miembros que mantienen un comportamiento disciplinado y constante.')" class="text-purple-400 hover:text-white ml-0.5"><i class="fa-solid fa-circle-question"></i></button>
-      </span>`;
+      html += `<span class="bg-purple-500/20 border border-purple-500 text-purple-300 text-[9px] font-bold px-2 py-0.5 rounded flex items-center gap-1"><i class="fa-solid fa-star text-purple-400"></i> Leal al Mando <button onclick="openMedalInfo('Leal al Mando', 'Condecoración otorgada por el Alto Mando a los miembros que mantienen un comportamiento disciplinado y constante.')" class="text-purple-400 hover:text-white ml-0.5"><i class="fa-solid fa-circle-question"></i></button></span>`;
 
       container.innerHTML = html;
     }
@@ -2613,23 +2632,9 @@
             const isUserChoice = userVotedOpt === cleanOpt;
 
             if (userVotedOpt) {
-              optionsHtml += `
-                <div class="space-y-1">
-                  <div class="flex justify-between text-[10px] text-slate-300 font-semibold">
-                    <span>${cleanOpt} ${isUserChoice ? '✔ (Tu voto)' : ''}</span>
-                    <span class="font-mono text-amber-400">${pct}% (${optVotes})</span>
-                  </div>
-                  <div class="w-full bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-800">
-                    <div class="bg-amber-500 h-2 rounded-full transition-all duration-500" style="width: ${pct}%"></div>
-                  </div>
-                </div>
-              `;
+              optionsHtml += `<div class="space-y-1"><div class="flex justify-between text-[10px] text-slate-300 font-semibold"><span>${cleanOpt} ${isUserChoice ? '✔ (Tu voto)' : ''}</span><span class="font-mono text-amber-400">${pct}% (${optVotes})</span></div><div class="w-full bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-800"><div class="bg-amber-500 h-2 rounded-full transition-all duration-500" style="width: ${pct}%"></div></div></div>`;
             } else {
-              optionsHtml += `
-                <button onclick="playSound('click'); submitPollVote('${poll.titulo.replace(/'/g, "\\'")}', '${cleanOpt.replace(/'/g, "\\'")}')" class="w-full text-left bg-slate-900 hover:bg-slate-800 p-2 rounded text-[11px] text-slate-200 border border-slate-800 font-semibold transition">
-                  📊 ${cleanOpt}
-                </button>
-              `;
+              optionsHtml += `<button onclick="playSound('click'); submitPollVote('${poll.titulo.replace(/'/g, "\\'")}', '${cleanOpt.replace(/'/g, "\\'")}')" class="w-full text-left bg-slate-900 hover:bg-slate-800 p-2 rounded text-[11px] text-slate-200 border border-slate-800 font-semibold transition">📊 ${cleanOpt}</button>`;
             }
           });
 
@@ -2638,16 +2643,7 @@
           const cleanPollTime = normalizeTime(poll.hora);
           const pollTimeStr = (cleanPollDate || cleanPollTime !== "N/D") ? ` • ${cleanPollDate} ${cleanPollTime}` : '';
 
-          htmlContent += `
-            <div class="bg-slate-950 p-3 rounded-lg border border-amber-500/50 space-y-2 shadow-lg">
-              <div class="flex items-center justify-between text-[10px] text-amber-400 border-b border-slate-900 pb-1 font-bold">
-                <span><i class="fa-solid fa-square-poll-vertical mr-1"></i>Encuesta Oficial • <span class="text-slate-300">${poll.autor}</span> <span class="text-slate-500 font-normal">${pollTimeStr}</span></span>
-                <div class="flex items-center gap-2"><span>Total: ${totalVotes} votos</span>${pollDeleteAction}</div>
-              </div>
-              <h4 class="font-bold text-white text-xs">${poll.titulo}</h4>
-              <div class="space-y-2 pt-1">${optionsHtml}</div>
-            </div>
-          `;
+          htmlContent += `<div class="bg-slate-950 p-3 rounded-lg border border-amber-500/50 space-y-2 shadow-lg"><div class="flex items-center justify-between text-[10px] text-amber-400 border-b border-slate-900 pb-1 font-bold"><span><i class="fa-solid fa-square-poll-vertical mr-1"></i>Encuesta Oficial • <span class="text-slate-300">${poll.autor}</span> <span class="text-slate-500 font-normal">${pollTimeStr}</span></span><div class="flex items-center gap-2"><span>Total: ${totalVotes} votos</span>${pollDeleteAction}</div></div><h4 class="font-bold text-white text-xs">${poll.titulo}</h4><div class="space-y-2 pt-1">${optionsHtml}</div></div>`;
         });
       }
 
@@ -2668,36 +2664,7 @@
         const reactKey = `news_react_${item.titulo}`;
         const countReact = localStorage.getItem(reactKey) || 0;
 
-        htmlContent += `
-          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 space-y-2">
-            <div class="flex items-center justify-between text-[10px] text-slate-400 border-b border-slate-900 pb-1">
-              <span class="font-bold text-amber-400"><i class="fa-solid fa-shield-halved mr-1"></i>Enviado por: <span class="text-white">${item.autor}</span></span>
-              <div class="flex items-center gap-2"><span>${cleanDate}${timeStr}</span>${adminActions}</div>
-            </div>
-            <h4 class="font-bold text-white text-xs">${item.titulo}</h4>
-            <p class="text-[11px] text-slate-300 whitespace-pre-wrap">${item.mensaje}</p>
-            ${imageHtml}
-            
-            <div class="pt-2 border-t border-slate-900 flex items-center justify-between text-[10px]">
-              <button onclick="playSound('click'); toggleReaction('${item.titulo.replace(/'/g, "\\'")}')" class="bg-slate-900 hover:bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-800 flex items-center gap-1 font-bold">
-                🫡 Salud! <span id="reactCount_${item.titulo}" class="text-amber-400 font-mono">${countReact}</span>
-              </button>
-              <button onclick="playSound('click'); toggleCommentsSection('${index}')" class="text-blue-400 hover:underline flex items-center gap-1">
-                <i class="fa-solid fa-comments"></i> Comentarios
-              </button>
-            </div>
-
-            <div id="commentsBox_${index}" class="hidden pt-2 border-t border-slate-900 space-y-2">
-              <div id="commentsList_${index}" class="space-y-1 max-h-32 overflow-y-auto pr-1 text-[10px]">
-                <p class="text-slate-500 italic">No hay comentarios aún.</p>
-              </div>
-              <div class="flex gap-1">
-                <input type="text" id="commentInput_${index}" placeholder="Escribe un comentario..." class="flex-1 bg-slate-900 border border-slate-700 rounded px-2 py-1 text-[10px] text-white focus:outline-none">
-                <button onclick="playSound('click'); addComment('${index}')" class="bg-blue-600 hover:bg-blue-500 text-white text-[10px] px-2 py-1 rounded font-bold">Enviar</button>
-              </div>
-            </div>
-          </div>
-        `;
+        htmlContent += `<div class="bg-slate-950 p-3 rounded-lg border border-slate-800 space-y-2"><div class="flex items-center justify-between text-[10px] text-slate-400 border-b border-slate-900 pb-1"><span class="font-bold text-amber-400"><i class="fa-solid fa-shield-halved mr-1"></i>Enviado por: <span class="text-white">${item.autor}</span></span><div class="flex items-center gap-2"><span>${cleanDate}${timeStr}</span>${adminActions}</div></div><h4 class="font-bold text-white text-xs">${item.titulo}</h4><p class="text-[11px] text-slate-300 whitespace-pre-wrap">${item.mensaje}</p>${imageHtml}<div class="pt-2 border-t border-slate-900 flex items-center justify-between text-[10px]"><button onclick="playSound('click'); toggleReaction('${item.titulo.replace(/'/g, "\\'")}')" class="bg-slate-900 hover:bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-800 flex items-center gap-1 font-bold">🫡 Salud! <span id="reactCount_${item.titulo}" class="text-amber-400 font-mono">${countReact}</span></button><button onclick="playSound('click'); toggleCommentsSection('${index}')" class="text-blue-400 hover:underline flex items-center gap-1"><i class="fa-solid fa-comments"></i> Comentarios</button></div><div id="commentsBox_${index}" class="hidden pt-2 border-t border-slate-900 space-y-2"><div id="commentsList_${index}" class="space-y-1 max-h-32 overflow-y-auto pr-1 text-[10px]"><p class="text-slate-500 italic">No hay comentarios aún.</p></div><div class="flex gap-1"><input type="text" id="commentInput_${index}" placeholder="Escribe un comentario..." class="flex-1 bg-slate-900 border border-slate-700 rounded px-2 py-1 text-[10px] text-white focus:outline-none"><button onclick="playSound('click'); addComment('${index}')" class="bg-blue-600 hover:bg-blue-500 text-white text-[10px] px-2 py-1 rounded font-bold">Enviar</button></div></div></div>`;
       });
       feed.innerHTML = htmlContent;
     }
@@ -2858,11 +2825,7 @@
         }
         loadControlPanelData();
         loadSession();
-      } catch (err) {
-        hideTacticalLoader();
-        playSound('error');
-        alert('Error.');
-      }
+      } catch (err) { hideTacticalLoader(); playSound('error'); alert('Error.'); }
     }
 
     async function rejectPendingNews(index) {
@@ -2881,11 +2844,7 @@
         }
         loadControlPanelData();
         loadSession();
-      } catch (err) {
-        hideTacticalLoader();
-        playSound('error');
-        alert('Error.');
-      }
+      } catch (err) { hideTacticalLoader(); playSound('error'); alert('Error.'); }
     }
 
     async function deleteNews(title) {
@@ -2916,11 +2875,7 @@
         }
         loadControlPanelData();
         loadSession();
-      } catch (err) {
-        hideTacticalLoader();
-        playSound('error');
-        alert('Error.');
-      }
+      } catch (err) { hideTacticalLoader(); playSound('error'); alert('Error.'); }
     }
 
     async function rejectPendingDoctrina(index) {
@@ -2939,11 +2894,7 @@
         }
         loadControlPanelData();
         loadSession();
-      } catch (err) {
-        hideTacticalLoader();
-        playSound('error');
-        alert('Error.');
-      }
+      } catch (err) { hideTacticalLoader(); playSound('error'); alert('Error.'); }
     }
 
     async function approvePendingPoll(index) {
@@ -2961,11 +2912,7 @@
         }
         loadControlPanelData();
         loadSession();
-      } catch (err) {
-        hideTacticalLoader();
-        playSound('error');
-        alert('Error.');
-      }
+      } catch (err) { hideTacticalLoader(); playSound('error'); alert('Error.'); }
     }
 
     async function rejectPendingPoll(index) {
@@ -2984,11 +2931,7 @@
         }
         loadControlPanelData();
         loadSession();
-      } catch (err) {
-        hideTacticalLoader();
-        playSound('error');
-        alert('Error.');
-      }
+      } catch (err) { hideTacticalLoader(); playSound('error'); alert('Error.'); }
     }
 
     async function deletePoll(title) {
@@ -3001,11 +2944,7 @@
         alert('✔ Encuesta eliminada.');
         loadControlPanelData();
         loadSession();
-      } catch (err) {
-        hideTacticalLoader();
-        playSound('error');
-        alert('Error.');
-      }
+      } catch (err) { hideTacticalLoader(); playSound('error'); alert('Error.'); }
     }
 
     function applyPermissions(user) {
@@ -3309,17 +3248,7 @@
 
             const item = document.createElement('div');
             item.className = 'bg-slate-900 p-2.5 rounded-lg border border-amber-900/40 flex items-center justify-between text-xs';
-            item.innerHTML = `
-              <div>
-                <span class="font-bold text-white text-[11px]">${u.username}</span> 
-                <span class="text-[9px] text-amber-400">(${u.rank})</span>
-                ${timeInfo}
-              </div>
-              <div class="flex gap-1">
-                <button onclick="playSound('click'); approveUser('${u.username}')" class="bg-emerald-600 text-white px-2 py-1 rounded text-[10px]"><i class="fa-solid fa-check"></i></button>
-                <button onclick="playSound('click'); rejectUserModal('${u.username}')" class="bg-red-600 text-white px-2 py-1 rounded text-[10px]"><i class="fa-solid fa-xmark"></i></button>
-              </div>
-            `;
+            item.innerHTML = `<div><span class="font-bold text-white text-[11px]">${u.username}</span> <span class="text-[9px] text-amber-400">(${u.rank})</span>${timeInfo}</div><div class="flex gap-1"><button onclick="playSound('click'); approveUser('${u.username}')" class="bg-emerald-600 text-white px-2 py-1 rounded text-[10px]"><i class="fa-solid fa-check"></i></button><button onclick="playSound('click'); rejectUserModal('${u.username}')" class="bg-red-600 text-white px-2 py-1 rounded text-[10px]"><i class="fa-solid fa-xmark"></i></button></div>`;
             pendingList.appendChild(item);
           });
         }
@@ -3337,18 +3266,7 @@
 
             const div = document.createElement('div');
             div.className = 'bg-slate-900 p-3 rounded-lg border border-slate-800 space-y-1';
-            div.innerHTML = `
-              <div class="flex justify-between items-center text-[10px] text-amber-400 font-bold">
-                <span>Enviado por: ${item.autor}</span>
-                <span class="text-slate-400">${timeStr}</span>
-              </div>
-              <h4 class="font-bold text-white text-xs">${item.titulo}</h4>
-              <p class="text-[11px] text-slate-300">${item.mensaje}</p>
-              <div class="flex gap-2 pt-1">
-                <button onclick="playSound('click'); approvePendingNews(${index})" class="bg-emerald-600 text-white px-3 py-1 rounded text-[10px] font-bold">Aprobar</button>
-                <button onclick="playSound('click'); rejectPendingNews(${index})" class="bg-red-600 text-white px-3 py-1 rounded text-[10px] font-bold">Rechazar</button>
-              </div>
-            `;
+            div.innerHTML = `<div class="flex justify-between items-center text-[10px] text-amber-400 font-bold"><span>Enviado por: ${item.autor}</span><span class="text-slate-400">${timeStr}</span></div><h4 class="font-bold text-white text-xs">${item.titulo}</h4><p class="text-[11px] text-slate-300">${item.mensaje}</p><div class="flex gap-2 pt-1"><button onclick="playSound('click'); approvePendingNews(${index})" class="bg-emerald-600 text-white px-3 py-1 rounded text-[10px] font-bold">Aprobar</button><button onclick="playSound('click'); rejectPendingNews(${index})" class="bg-red-600 text-white px-3 py-1 rounded text-[10px] font-bold">Rechazar</button></div>`;
             pendingNewsList.appendChild(div);
           });
         }
@@ -3366,18 +3284,7 @@
 
             const div = document.createElement('div');
             div.className = 'bg-slate-900 p-3 rounded-lg border border-slate-800 space-y-1';
-            div.innerHTML = `
-              <div class="flex justify-between items-center text-[10px] text-blue-400 font-bold">
-                <span>Enviado por: ${item.autor}</span>
-                <span class="text-slate-400">${timeStr}</span>
-              </div>
-              <h4 class="font-bold text-white text-xs">${item.titulo}</h4>
-              <p class="text-[11px] text-slate-300">${item.mensaje}</p>
-              <div class="flex gap-2 pt-1">
-                <button onclick="playSound('click'); approvePendingDoctrina(${index})" class="bg-emerald-600 text-white px-3 py-1 rounded text-[10px] font-bold">Aprobar</button>
-                <button onclick="playSound('click'); rejectPendingDoctrina(${index})" class="bg-red-600 text-white px-3 py-1 rounded text-[10px] font-bold">Rechazar</button>
-              </div>
-            `;
+            div.innerHTML = `<div class="flex justify-between items-center text-[10px] text-blue-400 font-bold"><span>Enviado por: ${item.autor}</span><span class="text-slate-400">${timeStr}</span></div><h4 class="font-bold text-white text-xs">${item.titulo}</h4><p class="text-[11px] text-slate-300">${item.mensaje}</p><div class="flex gap-2 pt-1"><button onclick="playSound('click'); approvePendingDoctrina(${index})" class="bg-emerald-600 text-white px-3 py-1 rounded text-[10px] font-bold">Aprobar</button><button onclick="playSound('click'); rejectPendingDoctrina(${index})" class="bg-red-600 text-white px-3 py-1 rounded text-[10px] font-bold">Rechazar</button></div>`;
             pendingDoctrinaList.appendChild(div);
           });
         }
@@ -3395,18 +3302,7 @@
 
             const div = document.createElement('div');
             div.className = 'bg-slate-900 p-3 rounded-lg border border-slate-800 space-y-1';
-            div.innerHTML = `
-              <div class="flex justify-between items-center text-[10px] text-emerald-400 font-bold">
-                <span>Enviado por: ${item.autor}</span>
-                <span class="text-slate-400">${timeStr}</span>
-              </div>
-              <h4 class="font-bold text-white text-xs">${item.titulo}</h4>
-              <p class="text-[10px] text-slate-400">Opciones: ${item.options}</p>
-              <div class="flex gap-2 pt-1">
-                <button onclick="playSound('click'); approvePendingPoll(${index})" class="bg-emerald-600 text-white px-3 py-1 rounded text-[10px] font-bold">Aprobar</button>
-                <button onclick="playSound('click'); rejectPendingPoll(${index})" class="bg-red-600 text-white px-3 py-1 rounded text-[10px] font-bold">Rechazar</button>
-              </div>
-            `;
+            div.innerHTML = `<div class="flex justify-between items-center text-[10px] text-emerald-400 font-bold"><span>Enviado por: ${item.autor}</span><span class="text-slate-400">${timeStr}</span></div><h4 class="font-bold text-white text-xs">${item.titulo}</h4><p class="text-[10px] text-slate-400">Opciones: ${item.options}</p><div class="flex gap-2 pt-1"><button onclick="playSound('click'); approvePendingPoll(${index})" class="bg-emerald-600 text-white px-3 py-1 rounded text-[10px] font-bold">Aprobar</button><button onclick="playSound('click'); rejectPendingPoll(${index})" class="bg-red-600 text-white px-3 py-1 rounded text-[10px] font-bold">Rechazar</button></div>`;
             pendingPollsList.appendChild(div);
           });
         }
@@ -3421,49 +3317,20 @@
             let adminActionsHtml = isSuperAdmin ? `<button onclick="playSound('click'); deleteUser('${u.username}')" class="text-red-400 text-xs px-1.5 py-0.5 rounded bg-red-950 border border-red-800/50" title="Eliminar usuario"><i class="fa-solid fa-trash-can"></i></button>` : '';
             let sanctionBtn = isSuperAdmin || isCoronel ? `<button onclick="openSanctionModal('${u.username}')" class="bg-amber-600 hover:bg-amber-500 text-white text-[9px] px-2 py-1 rounded font-bold"><i class="fa-solid fa-gavel"></i> Sancionar</button>` : '';
             
-            let rankSelectorHtml = isSuperAdmin ? `
-              <div class="flex items-center gap-2 pt-1 border-t border-slate-800/60 mt-1">
-                <span class="text-[10px] text-slate-400">Rango:</span>
-                <select onchange="changeUserRank('${u.username}', this.value)" class="bg-slate-950 border border-slate-700 text-white text-[10px] rounded p-1 focus:outline-none w-full">
-                  <option value="" disabled selected>Cambiar rango...</option>
-                  <option value="Privado">Privado</option>
-                  <option value="Sargento">Sargento</option>
-                  <option value="Teniente">Teniente</option>
-                  <option value="Mayor">Mayor</option>
-                  <option value="Coronel">Coronel</option>
-                  <option value="General">General</option>
-                </select>
-              </div>
-            ` : '';
+            let rankSelectorHtml = isSuperAdmin ? `<div class="flex items-center gap-2 pt-1 border-t border-slate-800/60 mt-1"><span class="text-[10px] text-slate-400">Rango:</span><select onchange="changeUserRank('${u.username}', this.value)" class="bg-slate-950 border border-slate-700 text-white text-[10px] rounded p-1 focus:outline-none w-full"><option value="" disabled selected>Cambiar rango...</option><option value="Privado">Privado</option><option value="Sargento">Sargento</option><option value="Teniente">Teniente</option><option value="Mayor">Mayor</option><option value="Coronel">Coronel</option><option value="General">General</option></select></div>` : '';
 
             let sanctionsListKey = `sanctions_${u.username}`;
             let userSanctions = JSON.parse(localStorage.getItem(sanctionsListKey) || '[]');
             let sanctionsHtml = '';
             if(userSanctions.length > 0) {
               sanctionsHtml = `<div class="text-[9px] text-red-400 bg-red-950/40 p-1.5 rounded border border-red-900/50 space-y-0.5 mt-1"><span class="font-bold">⚠ Amonestaciones (${userSanctions.length}):</span>`;
-              userSanctions.forEach(s => {
-                sanctionsHtml += `<div>• [${s.type}] ${s.reason} (${s.date})</div>`;
-              });
+              userSanctions.forEach(s => { sanctionsHtml += `<div>• [${s.type}] ${s.reason} (${s.date})</div>`; });
               sanctionsHtml += `</div>`;
             }
 
             let ingresoInfo = u.ingresoEB ? `<div class="text-[9px] text-cyan-300 mt-0.5"><i class="fa-solid fa-calendar-check mr-1"></i> Ingreso EB: ${u.ingresoEB}</div>` : `<div class="text-[9px] text-amber-300 mt-0.5"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Ingreso EB: No registrado</div>`;
 
-            div.innerHTML = `
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="font-bold text-white text-sm">${u.username}</span> 
-                  <span class="text-[9px] badge-${u.rank.toLowerCase()} px-1.5 py-0.5 rounded uppercase">${u.rank}</span>
-                  ${ingresoInfo}
-                </div>
-                <div class="flex items-center gap-1.5">
-                  ${sanctionBtn}
-                  ${adminActionsHtml}
-                </div>
-              </div>
-              ${rankSelectorHtml}
-              ${sanctionsHtml}
-            `;
+            div.innerHTML = `<div class="flex items-center justify-between"><div><span class="font-bold text-white text-sm">${u.username}</span> <span class="text-[9px] badge-${u.rank.toLowerCase()} px-1.5 py-0.5 rounded uppercase">${u.rank}</span>${ingresoInfo}</div><div class="flex items-center gap-1.5">${sanctionBtn}${adminActionsHtml}</div></div>${rankSelectorHtml}${sanctionsHtml}`;
             activeList.appendChild(div);
           });
         }
@@ -3606,19 +3473,7 @@
 
         const item = document.createElement('div');
         item.className = 'bg-slate-900 p-2.5 rounded-lg border border-slate-800 flex items-center justify-between text-xs gap-2';
-        item.innerHTML = `
-          <div class="flex items-center gap-2 overflow-hidden flex-1">
-            ${rankBadgeIcon}
-            <div class="truncate">
-              <div class="flex items-center gap-1.5 truncate">
-                <span class="font-bold text-white text-[11px] truncate">${u.username}</span>
-                <span class="text-[8px] badge-${u.rank ? u.rank.toLowerCase() : 'privado'} px-1 rounded uppercase shrink-0">${u.rank || 'PRIVADO'}</span>
-              </div>
-              <div class="mt-0.5">${statusBadge}</div>
-            </div>
-          </div>
-          <span class="text-cyan-400 font-mono font-bold text-xs shrink-0">${decimalToHM(u.totalHours)}</span>
-        `;
+        item.innerHTML = `<div class="flex items-center gap-2 overflow-hidden flex-1">${rankBadgeIcon}<div class="truncate"><div class="flex items-center gap-1.5 truncate"><span class="font-bold text-white text-[11px] truncate">${u.username}</span><span class="text-[8px] badge-${u.rank ? u.rank.toLowerCase() : 'privado'} px-1 rounded uppercase shrink-0">${u.rank || 'PRIVADO'}</span></div><div class="mt-0.5">${statusBadge}</div></div></div><span class="text-cyan-400 font-mono font-bold text-xs shrink-0">${decimalToHM(u.totalHours)}</span>`;
         dailyReportList.appendChild(item);
       });
     }
@@ -3685,12 +3540,7 @@
 
           sortedUsers.forEach(su => {
             currentRankedExportArray.push({ shift: shiftData.label, username: su.username, hours: su.hours });
-            usersHtml += `
-              <div class="flex justify-between items-center text-xs bg-slate-900 p-1.5 rounded">
-                <span class="font-bold text-amber-400">${su.username}</span>
-                <span class="text-cyan-400 font-mono">${decimalToHM(su.hours)}</span>
-              </div>
-            `;
+            usersHtml += `<div class="flex justify-between items-center text-xs bg-slate-900 p-1.5 rounded"><span class="font-bold text-amber-400">${su.username}</span><span class="text-cyan-400 font-mono">${decimalToHM(su.hours)}</span></div>`;
           });
           usersHtml += '</div>';
 
@@ -3715,13 +3565,7 @@
         summaryArray.forEach((item, index) => {
           const div = document.createElement('div');
           div.className = 'bg-slate-950 p-2.5 rounded border border-slate-800 text-xs flex justify-between items-center';
-          div.innerHTML = `
-            <div class="flex items-center gap-2">
-              <span class="font-mono font-bold text-slate-500 text-xs">#${index + 1}</span>
-              <span class="font-bold text-amber-400">${item.username}</span>
-            </div>
-            <span class="text-cyan-400 font-mono font-bold">${decimalToHM(item.totalHours)}</span>
-          `;
+          div.innerHTML = `<div class="flex items-center gap-2"><span class="font-mono font-bold text-slate-500 text-xs">#${index + 1}</span><span class="font-bold text-amber-400">${item.username}</span></div><span class="text-cyan-400 font-mono font-bold">${decimalToHM(item.totalHours)}</span>`;
           container.appendChild(div);
         });
 
@@ -3734,16 +3578,7 @@
         filtered.forEach((h) => {
           const div = document.createElement('div');
           div.className = 'bg-slate-950 p-2.5 rounded border border-slate-800 text-xs space-y-1';
-          div.innerHTML = `
-            <div class="flex justify-between items-center font-bold">
-              <span class="text-amber-400">${h.username}</span>
-              <span class="text-cyan-400 font-mono">${h.duracion || decimalToHM(h.horas)}</span>
-            </div>
-            <div class="flex justify-between items-center text-[10px] text-slate-400">
-              <span>📅 ${normalizeDate(h.fecha)}</span>
-              <span>⏰ ${normalizeTime(h.horaInicio)} ➔ ${normalizeTime(h.horaFin)}</span>
-            </div>
-          `;
+          div.innerHTML = `<div class="flex justify-between items-center font-bold"><span class="text-amber-400">${h.username}</span><span class="text-cyan-400 font-mono">${h.duracion || decimalToHM(h.horas)}</span></div><div class="flex justify-between items-center text-[10px] text-slate-400"><span>📅 ${normalizeDate(h.fecha)}</span><span>⏰ ${normalizeTime(h.horaInicio)} ➔ ${normalizeTime(h.horaFin)}</span></div>`;
           container.appendChild(div);
         });
       }
