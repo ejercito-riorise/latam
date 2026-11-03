@@ -234,9 +234,7 @@
             </h4>
             <span class="text-[9px] text-slate-400">Hoja de Méritos</span>
           </div>
-          <div id="userMedalsContainer" class="flex flex-wrap gap-1.5 pt-1">
-            <!-- Se cargan dinámicamente -->
-          </div>
+          <div id="userMedalsContainer" class="flex flex-wrap gap-1.5 pt-1"></div>
         </div>
 
         <!-- MÓDULO CONTROL DE SERVICIO -->
@@ -330,7 +328,7 @@
             <button id="regTab8Btn" onclick="switchRegTab(8); playSound('click');" class="py-1 rounded text-slate-400 hover:text-white">🪖 Mando</button>
           </div>
 
-          <!-- BLOQUE 1: CAPÍTULOS 1 Y 2 (Con todos los subpuntos exactos) -->
+          <!-- BLOQUE 1: CAPÍTULOS 1 Y 2 -->
           <div id="regView1" class="space-y-2.5">
             <div class="bg-gradient-to-r from-amber-950/60 to-slate-900 p-3 rounded-xl border border-amber-800/60 flex items-start gap-2.5 shadow">
               <div class="w-8 h-8 rounded-lg bg-emerald-600/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 text-sm mt-0.5">
@@ -382,7 +380,7 @@
             </div>
           </div>
 
-          <!-- BLOQUE 2: CAPÍTULOS 3 Y 4 (Permisos y Prohibiciones completas) -->
+          <!-- BLOQUE 2: CAPÍTULOS 3 Y 4 -->
           <div id="regView2" class="space-y-2 hidden">
             <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2.5">
               <button onclick="toggleChapter('cap3')" class="w-full flex justify-between items-center text-xs font-bold text-emerald-400">
@@ -436,6 +434,10 @@
                 <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.23.</strong> Ocupar o abandonar puestos sin reportarlo por radio.</div>
                 <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.24.</strong> Cambiar o elegir puestos sin autorización.</div>
                 <div class="bg-slate-900 p-2 rounded border border-slate-800"><strong>4.25.</strong> Usar la radio y el chat del departamento para fines ajenos al trabajo.</div>
+                <div class="bg-red-950/60 p-2.5 rounded border border-red-700/80 mt-2">
+                  <strong class="text-red-400 block mb-1">🚨 ARMAS PROHIBIDAS (DENTRO Y FUERA DE TURNO):</strong>
+                  <p class="text-[10px] text-slate-200">Se prohíbe estrictamente portar o utilizar la <strong>porra</strong> y la <strong>pistola silenciadora</strong> para todo el personal de la EB en cualquier momento o circunstancia.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -483,40 +485,51 @@
             </div>
           </div>
 
-          <!-- BLOQUE 4: RANGOS -->
+          <!-- BLOQUE 4: RANGOS Y ARMAMENTO AUTORIZADO -->
           <div id="regView4" class="space-y-3 hidden">
             <div class="bg-slate-950 p-3 rounded-xl border border-amber-500/50 space-y-3">
               <div class="flex items-center justify-between border-b border-slate-900 pb-2">
                 <h4 class="text-xs font-bold text-amber-400"><i class="fa-solid fa-ranking-star mr-1"></i> Rangos de las Fuerzas Armadas (EB)</h4>
-                <span class="text-[9px] text-emerald-400 font-bold">Jerarquía Oficial</span>
+                <span class="text-[9px] text-emerald-400 font-bold">Jerarquía & Armamento</span>
               </div>
               <div class="space-y-2 pt-1 text-[11px]">
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
-                  <strong class="text-white block mb-1">⭐ RANGO 1 / PRIVADO</strong>
-                  <p class="text-[10px] text-slate-300">Otorgado a nuevos reclutas. Función: Obedecer órdenes, cuidar base militar como guardia, vigilar accesos. Se le otorga chaleco antibalas y pistolas DEASER.</p>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 space-y-1">
+                  <strong class="text-white block">⭐ RANGO 1 / PRIVADO</strong>
+                  <p class="text-[10px] text-slate-300">Función: Obedecer órdenes, cuidar base militar como guardia, vigilar accesos.</p>
+                  <p class="text-[10px] text-amber-300"><strong>🔫 Armamento autorizado:</strong> Desert Eagle y Chaleco Antibalas.</p>
                 </div>
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
-                  <strong class="text-white block mb-1">⭐⭐ RANGO 2 / SARGENTO</strong>
-                  <p class="text-[10px] text-slate-300">Función: Encargados de la enseñanza, educación, manejo y control de los privados (profesores). Participan en acciones y apoyan a soldados intermedios.</p>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 space-y-1">
+                  <strong class="text-white block">⭐⭐ RANGO 2 / SARGENTO</strong>
+                  <p class="text-[10px] text-slate-300">Función: Enseñanza, educación, manejo y control de los privados (profesores).</p>
+                  <p class="text-[10px] text-amber-300"><strong>🔫 Armamento autorizado:</strong> Desert Eagle, Chaleco Antibalas y Escopeta.</p>
                 </div>
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
-                  <strong class="text-white block mb-1">⭐⭐⭐ RANGO 3 / TENIENTES</strong>
-                  <p class="text-[10px] text-slate-300">Función: Conocen las normas y manejo de base. Verifican la enseñanza de los sargentos a los privados y el control de la base. Tienen permitido usar vehículos militares para movilización.</p>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 space-y-1">
+                  <strong class="text-white block">⭐⭐⭐ RANGO 3 / TENIENTES</strong>
+                  <p class="text-[10px] text-slate-300">Función: Conocen normas y manejo de base. Verifican enseñanza de sargentos y control de base. Uso de vehículos militares.</p>
+                  <p class="text-[10px] text-amber-300"><strong>🔫 Armamento autorizado:</strong> Desert Eagle, Chaleco Antibalas, Escopeta y MP5.</p>
                 </div>
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
-                  <strong class="text-white block mb-1">⭐⭐⭐⭐ RANGO 4 / MAYOR</strong>
-                  <p class="text-[10px] text-slate-300">Función: Soldados de élite, los más destacados. Lideran rangos anteriores, organizan, enseñan y verifican el orden. Se les permite utilizar toda arma de fuego.</p>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 space-y-1">
+                  <strong class="text-white block">⭐⭐⭐⭐ RANGO 4 / MAYOR</strong>
+                  <p class="text-[10px] text-slate-300">Función: Soldados de élite, los más destacados. Lideran rangos anteriores, organizan, enseñan y verifican el orden.</p>
+                  <p class="text-[10px] text-amber-300"><strong>🔫 Armamento autorizado:</strong> Acceso a <strong>todas las armas</strong> de fuego.</p>
                 </div>
-                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800">
-                  <strong class="text-white block mb-1">⭐⭐⭐⭐⭐ RANGO 5 / CORONEL</strong>
-                  <p class="text-[10px] text-slate-300">Función: Jefes y vice-líderes de las fuerzas armadas. Dan las ordenes, mandan cuando el General no está. Sus órdenes no se cuestionan, se cumplen.</p>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 space-y-1">
+                  <strong class="text-white block">⭐⭐⭐⭐⭐ RANGO 5 / CORONEL</strong>
+                  <p class="text-[10px] text-slate-300">Función: Jefes y vice-líderes de las fuerzas armadas. Dan las órdenes, mandan cuando el General no está. Sus órdenes no se cuestionan.</p>
+                  <p class="text-[10px] text-amber-300"><strong>🔫 Armamento autorizado:</strong> Acceso a <strong>todas las armas</strong> de fuego.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- BLOQUE 5: CÓDIGOS Q Y BIBLIA RP COMPLETA -->
+          <!-- BLOQUE 5: CÓDIGOS Q Y BIBLIA RP CON BUSCADOR RESTAURADO -->
           <div id="regView5" class="space-y-3 hidden">
+            <!-- BUSCADOR TÁCTICO -->
+            <div class="bg-slate-950 p-2.5 rounded-xl border border-blue-500/40 space-y-1">
+              <label class="block text-[10px] font-bold text-blue-400"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buscador Táctico (Códigos Q y Biblia RP)</label>
+              <input type="text" id="tacticalSearchInput" onkeyup="filterTacticalManuals()" placeholder="Escribe para buscar (Ej: RDM, QRR, CL...)" class="w-full bg-slate-900 border border-slate-700 text-white text-xs rounded p-1.5 focus:outline-none focus:border-blue-500">
+            </div>
+
             <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2">
               <h4 class="text-xs font-bold text-amber-400"><i class="fa-solid fa-tower-broadcast mr-1"></i> Códigos Q</h4>
               <div id="qCodesContainer" class="grid grid-cols-1 gap-1.5 max-h-40 overflow-y-auto pr-1 text-[11px]"></div>
@@ -539,10 +552,9 @@
             </div>
           </div>
 
-          <!-- BLOQUE 7: ACCIONES Y OPERACIONES (CRM, Patrullaje, Pacificaciones, Invasiones) -->
+          <!-- BLOQUE 7: ACCIONES Y OPERACIONES -->
           <div id="regView7" class="space-y-3 hidden">
             <div class="space-y-2.5 text-[11px]">
-              
               <div class="bg-slate-950 p-3 rounded-xl border border-blue-500/40 space-y-1.5">
                 <h5 class="font-bold text-blue-400 text-xs"><i class="fa-solid fa-truck-fast mr-1"></i> CRM (Cargamento)</h5>
                 <p class="text-slate-300"><strong>Horarios:</strong> 1er Cargamento 17:00 /TIME | 2do Cargamento 19:00 /TIME (Todos los días, 2 veces al día).</p>
@@ -578,7 +590,6 @@
                   <p class="text-red-400 mt-1">• <strong>Regla adicional maletín:</strong> Si una familia roba un maletín en el EB y conquista la mafia en ausencia de la otra, su mafia será reiniciada y recibirá advertencia, recuperando la anterior su mafia.</p>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -724,17 +735,14 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
-
       </div>
     </main>
   </div>
 
-  <!-- MODAL DE EXAMEN OBLIGATORIO PARA NUEVOS PRIVADOS -->
+  <!-- MODAL DE EXAMEN OBLIGATORIO -->
   <div id="privateExamModal" class="fixed inset-0 bg-slate-950/98 backdrop-blur-lg z-[100] hidden flex items-center justify-center p-3">
     <div class="military-card w-full max-w-sm p-4 rounded-xl border border-red-500/80 shadow-2xl space-y-3">
       <div class="border-b border-slate-800 pb-2 flex items-center justify-between">
@@ -819,7 +827,6 @@
       <div id="adminTabsContainer" class="bg-slate-950 p-1 rounded-lg border border-slate-800 mb-3 text-center"></div>
 
       <div class="flex-1 overflow-y-auto pr-1 space-y-2">
-        
         <!-- PESTAÑA SOLICITUDES -->
         <div id="viewPending" class="space-y-2">
           <h4 class="text-xs font-bold text-amber-400 flex items-center gap-1 mb-2"><i class="fa-solid fa-clock-rotate-left"></i> Solicitudes Pendientes:</h4>
@@ -999,7 +1006,6 @@
             <div id="pendingPollsList" class="space-y-2"><p class="text-xs text-slate-400 italic">Cargando...</p></div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -1251,7 +1257,8 @@
     const masterQuizBank = [
       { q: "¿Cuál es la regla de etiqueta obligatoria para el perfil de WhatsApp en la EB?", options: ["A) Solo tu apodo", "B) Rango + Nombre", "C) Número de teléfono"], a: 1 },
       { q: "¿Cuánto dura exactamente un entrenamiento según el Capítulo 5?", options: ["A) 5 minutos exactos", "B) 10 minutos", "C) 3 minutos"], a: 0 },
-      { q: "¿Qué se prohíbe estrictamente durante el entrenamiento (Cap 5)?", options: ["A) Hablar, usar radio, gestos y teléfono", "B) Tomar agua", "C) Parpadear"], a: 0 },
+      { q: "¿Qué armas están estrictamente prohibidas dentro y fuera de turno para el personal de la EB?", options: ["A) Desert Eagle y MP5", "B) La porra y la pistola silenciadora", "C) Escopeta y rifle"], a: 1 },
+      { q: "¿Qué armamento máximo puede portar un Soldado Rango 3 / Teniente?", options: ["A) Solo pistola", "B) Desert Eagle, chaleco antibalas, escopeta y MP5", "C) Todas las armas"], a: 1 },
       { q: "¿Cuál es el horario semanal mínimo de juego requerido para el personal del EB?", options: ["A) 5 horas", "B) 7 horas", "C) 14 horas"], a: 1 },
       { q: "¿Cuál es la ausencia máxima permitida del juego antes de sanción?", options: ["A) 1 día", "B) 3 días", "C) 7 días"], a: 1 },
       { q: "¿Qué facción corresponde al cargamento (CRM) del día Lunes?", options: ["A) Facción Verde", "B) Facción Morada", "C) Mafia Costera"], a: 0 },
@@ -1262,10 +1269,9 @@
       { q: "¿En qué días se programan las invasiones de las facciones y mafias contra el EB?", options: ["A) Lunes y Miércoles", "B) Martes y Jueves", "C) Viernes y Sábado"], a: 1 },
       { q: "¿Cuál es el intervalo obligatorio mínimo entre acciones programadas contra el EB los jueves?", options: ["A) 1 hora", "B) 2 horas", "C) 4 horas"], a: 1 },
       { q: "¿Qué ocurre si una familia roba un maletín durante una acción y conquista la mafia en ausencia de la otra?", options: ["A) Se le recompensa con dinero", "B) Su mafia será reiniciada y recibirá una advertencia, recuperando la anterior su mafia", "C) No pasa nada"], a: 1 },
-      { q: "¿Qué armamento y equipo se le otorga inicialmente al Rango 1 / Privado?", options: ["A) Tanques de guerra", "B) Armamento para defender base, chalecos y pistolas DEASER de bajo calibre", "C) Ningún arma"], a: 1 },
+      { q: "¿Qué armamento y equipo se le otorga inicialmente al Rango 1 / Privado?", options: ["A) Tanques de guerra", "B) Desert Eagle y chaleco antibalas", "C) Ningún arma"], a: 1 },
       { q: "¿Cuál es la función principal del Rango 2 / Sargento?", options: ["A) Enseñar, educar, manejar y controlar a los privados (profesores)", "B) Mandar todo el ejército", "C) Conducir helicópteros"], a: 0 },
-      { q: "¿Qué autorización especial posee el Rango 3 / Tenientes en base?", options: ["A) Usar toda arma pesada", "B) Uso de vehículos militares para movilización en base y control", "C) Dar de baja generales"], a: 1 },
-      { q: "¿Qué nivel de armamento está autorizado para el Rango 4 / Mayor?", options: ["A) Solo pistolas", "B) Toda arma de fuego", "C) Solo escopetas"], a: 1 },
+      { q: "¿Qué nivel de armamento está autorizado para el Rango 4 / Mayor?", options: ["A) Solo pistolas", "B) Todas las armas de fuego", "C) Solo escopetas"], a: 1 },
       { q: "¿Cuál es la característica de las órdenes del Rango 5 / Coronel?", options: ["A) Se pueden negociar", "B) No se cuestionan, se cumplen (mandan cuando el General no está)", "C) Son opcionales"], a: 1 },
       { q: "¿Qué significa RDM según la Biblia RP?", options: ["A) Reparación de motor", "B) Entrar en una acción sin estar involucrado", "C) Reportar de inmediato"], a: 1 },
       { q: "¿Cuál es el significado del Código Q: QRR?", options: ["A) Espere", "B) Refuerzo", "C) Dirección"], a: 1 }
@@ -1313,7 +1319,7 @@
       if (!container) return;
       let html = '';
       list.forEach(item => {
-        html += `<div class="bg-slate-900 p-2 rounded border border-slate-800 flex items-center justify-between"><span class="font-mono font-bold text-amber-400">${item.code}</span><span class="text-slate-200 text-right">${item.meaning}</span></div>`;
+        html += `<div class="qcode-item bg-slate-900 p-2 rounded border border-slate-800 flex items-center justify-between"><span class="font-mono font-bold text-amber-400">${item.code}</span><span class="text-slate-200 text-right">${item.meaning}</span></div>`;
       });
       container.innerHTML = html;
     }
@@ -1323,9 +1329,23 @@
       if (!container) return;
       let html = '';
       list.forEach(item => {
-        html += `<div class="bg-slate-900 p-2 rounded border border-slate-800 flex items-center justify-between"><span class="font-mono font-bold text-blue-400">${item.code}</span><span class="text-slate-200 text-right">${item.meaning}</span></div>`;
+        html += `<div class="rp-item bg-slate-900 p-2 rounded border border-slate-800 flex items-center justify-between"><span class="font-mono font-bold text-blue-400">${item.code}</span><span class="text-slate-200 text-right">${item.meaning}</span></div>`;
       });
       container.innerHTML = html;
+    }
+
+    function filterTacticalManuals() {
+      const query = document.getElementById('tacticalSearchInput').value.toLowerCase().trim();
+      
+      const qCodesFiltered = qCodesData.filter(item => 
+        item.code.toLowerCase().includes(query) || item.meaning.toLowerCase().includes(query)
+      );
+      renderQCodes(qCodesFiltered);
+
+      const rpFiltered = rpRulesData.filter(item => 
+        item.code.toLowerCase().includes(query) || item.meaning.toLowerCase().includes(query)
+      );
+      renderRpRules(rpFiltered);
     }
 
     function toggleChapter(id) {
